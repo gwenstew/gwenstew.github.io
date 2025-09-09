@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Gweneth Stewart</title>
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+        
+        <link rel="stylesheet" href="./style.css">
+        
+    </head>
+    <body>
+        <main>
+            <nav class="nav-header"> <!-- jump link to project section-->
+                <a href="index.html#project-container">Projects</a>
+            </nav>
+
+            <header class="header">
+                <div class="image-cropper">
+                    <img src="/docs/BizProfPhoto.jpg" class="profile-pic">
+                </div>
+                <div id="header-text">
+                    <h1>Gweneth Stewart</h1>
+                    <h3> Computer Science Graduate from Boston University</h3>
+                
+                    <nav id="links">
+                        <ul>
+                            <li><a href="mailto:gstew@bu.edu">
+                                <i class="far fa-envelope"></i> 
+                                </a>
+                                <span>gstew@bu.edu</span>
+                            </li>
+                            <li><a href="https://www.linkedin.com/in/gwen-stewart-/">
+                                <i class="fab fa-linkedin"></i> 
+                                </a>
+                                <span>LinkedIn</span>
+                            </li>
+                            <li><a href="https://github.com/gwenstew">
+                                <i class="fab fa-github"></i>
+                                </a>
+                                <span>Github</span>
+                            </li>
+                            <li><a href="/pages/cv.html">
+                                <i class="far fa-file-text"></i>
+                                </a>
+                                <span>CV</span>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </header>
+            
+            <section class="about"> <!--about me-->
+                <h3> About me</h3>
+                <p> 
+                    Hi! I'm Gwen, a recent graduate from Boston University's Computer Science program with strong
+                    interest in 3D graphics, machine learning, and real-time systems.
+                </p>
+                <p>
+                    During my studies and projects I've gained experience in full-stack development and performance-oriented
+                    programming, while building a foundation in algorithms, data structures, and low-level systems. I'm eager
+                    to apply my skills and contribute to innovative solutions.
+                </p>
+            </section>
+            
+            
+            <div id="project-container"> <!--projects-->
+                <h3>My Projects</h3>
+
+                <div class="project-box"> <!--guitar tuner-->
+                    <div class="project-box-text">
+                        <a href="/projects/guitarTuner">Guitar Tuner</a> 
+                        <!--insert img-->
+                        <p>
+                            Desktop guitar tuner with real time pitch detection using autocorrelation.
+                            Features a simple, responsive UI with a dial and current frequency
+                        </p>
+                        <ul class="tech-stack">
+                            <li>C++</li>
+                            <li>JUCE</li>
+                            <li>DSP</li>
+                        </ul>
+                    </div>                      
+                </div>
+                <div class="project-box"> <!--collaborative filtering-->
+                    <div class="project-box-text">
+                        <a href="projects/collabFilter">Collaborative Filtering</a>
+                        <p>
+                            Research on memory and model-based collaborative filtering techniques on recommendation systems
+                            with the MovieLens dataset.
+                        </p>
+                        <ul class="tech-stack">
+                            <li>Python</li>
+                            <li>NumPy</li>
+                            <li>Scikit-Learn</li>
+                            <li>Machine Learning</li>
+                        </ul> 
+                    </div>                    
+                </div>
+                <div class="project-box"> <!-- shaders/rendering-->
+                    <div class="project-box-text">
+                        <a href="/projects/shaderRender">Rendering and Shading</a>
+                        <p>
+                            3D rendering pipeline that displays primitive shapes including spheres, cones, torus, and cubes.
+                            Set up different scenes with different light sources, implemented with the Phong Illumination Model.
+                        </p>
+                        <ul class="tech-stack">
+                            <li>OpenGL</li>
+                            <li>Python</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="project-box"> <!-- college kitchen-->
+                    <div class="project-box-text">
+                        <a href="projects/collegeKitchen">College Kitchen</a>
+                        <p>
+                            Full-stack web app created to help college students with cooking and grocery shopping
+                            for themselves. Allows users to discover recipes based on the ingredients in their virtual pantry
+                        </p>
+                        <ul class="tech-stack">
+                            <li>React</li>
+                            <li>Firebase</li>
+                            <li>HTML/CSS</li>
+                            <li>Javascript</li>
+                            <li>Google OAuth</li>
+                        </ul>
+                    </div>
+                </div>
+            </div> 
+        </main>
+    </body>
+</html>
