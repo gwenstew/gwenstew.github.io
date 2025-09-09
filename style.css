@@ -7,9 +7,12 @@ main {
 
 
 
-.nav-header a{
+.nav-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     float: right;
-    margin: 0.5rem 2rem;
+    padding: 0.5rem 2rem;
     
 }
 
