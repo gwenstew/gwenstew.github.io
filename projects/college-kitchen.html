@@ -14,19 +14,30 @@
                 <a href="/index.html#main" class="home-link">Gweneth Stewart</a>
                 <a href="/index.html#project-container" class="project-link">Projects</a>
             </nav>
-            <h2>College Kitchen</h2>
+            <h2 class="project-title">College Kitchen</h2>
             <div class="project-photos">
-                <img src="/docs/college-kitchen-photos/college-kitchen-welcome.png" alt="Welcome page">
-                <p class="caption">Welcome Page</p>
-                <img src="/docs/college-kitchen-photos/college-kitchen-home.png" alt="Home page">
-                <p class="caption">Home Page</p>
-                <img src="/docs/college-kitchen-photos/college-kitchen-pantry.png" alt="Pantry page">
-                <p class="caption">Virtual Pantry</p>
-                <img src="/docs/college-kitchen-photos/college-kitchen-search.png" alt="Search page">
-                <p class="caption">Recipe search results from virtual pantry</p>
+                <div class="photo-item">
+                    <img src="/docs/college-kitchen-photos/college-kitchen-welcome.png" alt="Welcome page">
+                    <p class="caption">Welcome Page</p>
+                </div> 
+                <div class="photo-item">
+                    <img src="/docs/college-kitchen-photos/college-kitchen-search.png" alt="Search page">
+                    <p class="caption">Recipe search results from virtual pantry</p>
+                </div>
+                <div class="photo-item">
+                    <img src="/docs/college-kitchen-photos/college-kitchen-home.png" alt="Home page">
+                    <p class="caption">Home Page</p>
+                </div>
+                <div class="photo-item">
+                    <img src="/docs/college-kitchen-photos/college-kitchen-pantry.png" alt="Pantry page">
+                    <p class="caption">Virtual Pantry</p>
+                </div>
+               
+                
 
             </div>
             <div class="project-overview">
+                <a href="https://github.com/gwenstew/CS411-Project">Github Repo</a>
                 <h2>Overview</h2>
 
                 <p>
@@ -42,7 +53,16 @@
                     and gain experience in the kitchen.
     
                 </p>
+
+                <h2>Features</h2>
+                <ul>
+                    <li><strong>User account management</strong>: Secure account creation and authentication through Google</li>
+                    <li><strong>Recipe search</strong>: Search for recipes by name or by pantry ingredient </li>
+                    <li><strong>Liked recipes</strong>: Save your favorite recipes using the heart button</li>
+                    <li><strong>Track groceries</strong>: Add/remove ingredients and quantities to your virtual pantry</li>
+                </ul>
                 <h2>Technical Details</h2>
+                
                 <p>
                     College Kitchen is built with <strong>React</strong> and utilizes <strong>Google OAuth</strong> for secure 
                     authentication and <strong>Firebase</strong> for real-time database management. Recipe discovery is powered by 

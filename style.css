@@ -114,12 +114,61 @@ main {
 }
 
 .tech-stack li {
-  background-color: white; /* bubble background */
-  color: #333;              /* text color */
-  padding: 0.3rem 0.75rem;  /* spacing inside bubble */
-  border-radius: 9999px;    /* fully rounded */
-  font-size: 0.85rem;
-  font-weight: 500;
-  white-space: nowrap;      /* prevent text breaking */
-  transition: background 0.2s, transform 0.2s;
+    background-color: white; /* bubble background */
+    color: #333;              /* text color */
+    padding: 0.3rem 0.75rem;  /* spacing inside bubble */
+    border-radius: 9999px;    /* fully rounded */
+    font-size: 0.85rem;
+    font-weight: 500;
+    white-space: nowrap;      /* prevent text breaking */
+    transition: background 0.2s, transform 0.2s;
 }
+
+/* STYLING FOR PROJECT PAGES*/
+
+.project-title {
+    margin: 2rem;  
+    padding: 0 1rem;    
+    font-size: 3rem;
+    font-weight: 600;    
+}
+
+.project-photos{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 1rem;           
+    justify-items: center; 
+    max-width: 1000px;           
+    margin: 2rem auto;
+}
+.project-photos img{
+    width: 400px;
+    height:auto;
+    padding-top: 2rem;
+    outline: 1px solid rgba(0,0,0,0.1);
+    border-radius: 8px;
+}
+
+.photo-item {
+    text-align: center;
+}
+
+.project-photos p {
+    color: rgb(109, 109, 109);
+    font-size: 0.8rem;
+    font-weight: bold;    
+}
+
+.project-overview {
+    margin: 3rem;  
+    padding: 0 1rem;    
+    line-height: 1.6;   
+}
+
+.project-overview h2 {
+    font-size: 1.5rem;
+    margin-top: 2rem;   
+    margin-bottom: 1rem; 
+    font-weight: 600;
+}
+
