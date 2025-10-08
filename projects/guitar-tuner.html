@@ -41,9 +41,55 @@
                 </p>
 
                 <h2>How it works</h2>
+                <p>
+                    During an embedded systems class in my undergraduate degreee, I learned about Fourier Transform and how it can effectively
+                    detect pitch by identifying frequency peaks in a signal. While the FFT (Fast Fourier Transform) is efficient it was not repsonsive 
+                    enough to for a real-time tuner. After some investigation I decided to implement a simple autocorrelation function to measure the 
+                    periodicity of the waveform. 
+                </p>
+
+                <div class="project-subsection">
+                    <h3> Autocorrelation</h3>
+                    <p>
+                        Autocorrelation is a mathmatical measure of the correlation of a signal with a delayed copy of itself over varying lags.
+                        It is particularly helpful in pitch detection because it can identify the repeating patterns of a signal, denoting the 
+                        fundamental pitch. This is because the similarity between the signal and the lagged signal will spike at the lag that matches
+                        the signal's period, thus the lag is correlated to the frequency of the signal.
+                    </p>
+                    <p>
+                        The function works by iterating across the range of valid time lags to determine the lag that results in the highest 
+                        correlation. Once the best time delay is found, the pitch frequency is found as follows.
+                    </p>
+                    <pre><code>pitch (Hz) = sampleRate / bestLag</code></pre>
+                </div>
+                
                 <h2>GUI</h2>
+                <p>
+                    I used the JUCE framework to construct the GUI. When the current pitch is updated, it is mapped to an angular range
+                    to determine the placement of the end of the dial. Linear interpolation is then applied using the previously computed
+                    angle and the new angle to ensure smooth movement.
+                </p>
+
                 <h2>Technical Details</h2>
+                    <ul>
+                        <li><b>Language:</b> C++, CMake</li>
+                        <li><b>Operating System:</b> MacOS</li>
+                        <li><b>Framework:</b> JUCE (for audio processing and GUI)</li>
+                        <li><b>Algorithms:</b> Autocorrelation-based pitch detection, binary search</li>
+                        <!--<li>Sample Rate: 44.1 kHz</li>
+                        <li>Latency: &lt; 10 ms average response time</li>-->
+                        <li><b>Pitch Range:</b> 70–1000 Hz</li>
+                        
+                    </ul>
                 <h2>Challenges</h2>
+                <p>
+                    One of the major challenges I encountered during this project was working with the buffer. Since I was using JUCE
+                    the buffer felt like a black box because I did not initially know how it was extracting data. When using the pitch
+                    detection function with the audio buffer low frequency pitches could not be detected. The reason for this was the buffer
+                    was not large enough to encapsulate one period of a low frequency pitch. To accurately detect the lowest typical guitar pitch
+                    of around 70Hz, the buffer must contain atleast 1.5-2x the period which is around 1200 samples. To address this, I implemented a larger 
+                    “mega buffer” of size 2048, which can accommodate for low-frequency signals.
+                </p>
             </div>
 
         </main>
