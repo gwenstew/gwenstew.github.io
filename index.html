@@ -5,6 +5,9 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <title>Gweneth Stewart</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
 
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
         
@@ -14,8 +17,15 @@
     <body>
         <main>
             <nav class="nav-header"> <!-- jump link to project section-->
-                <a href="index.html#main" class="home-link">Gweneth Stewart</a>
-                <a href="index.html#project-container" class="project-link">Projects</a>
+                <div id="left-links"> 
+                    <a href="index.html#main" class="home-link">Gweneth Stewart</a>
+                </div>
+                <div id="right-links">
+                    <a href="index.html#about" class="about-link">About</a>
+                    <a href="index.html#project-container" class="project-link">Projects</a>
+                </div>
+                
+                
             </nav>
 
             <header class="header">
@@ -53,8 +63,8 @@
                 </div>
             </header>
             
-            <section class="about"> <!--about me-->
-                <h3> About me</h3>
+            <section id="about" class="about"> <!--about me-->
+                <h2> About me</h2>
                 <p> 
                     Hi! I'm Gwen, a recent graduate from Boston University's Computer Science program with strong
                     interest in 3D graphics, machine learning, and real-time systems.
@@ -68,7 +78,7 @@
             
             
             <div id="project-container"> <!--projects-->
-                <h3>My Projects</h3>
+                <h2>My Projects</h2>
 
                 <div class="project-box"> <!--guitar tuner-->
                     <div class="project-box-text">
