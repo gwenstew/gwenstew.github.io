@@ -110,10 +110,16 @@ main {
     font-size: 0.8rem;
 }
 
+#links a {
+    color: inherit;
+}
+
+#links a:hover {
+    transform: scale(1.5);
+}
+
 .about {
-    margin-top: 1.5rem;
     margin: 1.5rem;
-    margin-bottom: 1.5;
     padding: 0 7rem;
 }
 
@@ -131,21 +137,29 @@ main {
 
 
 .project-box {
+    display: block;
     background-color: pink;
     border-radius: 25px;
+    text-decoration: none;
+    color: inherit;
 }
 
 .project-box-text {
-    margin: 1.5rem;
+    margin: 2rem;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    gap: 0.5rem;
 }
 
 .project-box:hover {
     transform: scale(1.1);
 }
 
+.project-box-text h2 {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
 
 .tech-stack {
     display: flex;
@@ -161,7 +175,7 @@ main {
     color: #333;              /* text color */
     padding: 0.3rem 0.75rem;  /* spacing inside bubble */
     border-radius: 9999px;    /* fully rounded */
-    font-size: 0.85rem;
+    font-size: 1rem;
     font-weight: 500;
     white-space: nowrap;      /* prevent text breaking */
     transition: background 0.2s, transform 0.2s;
@@ -227,18 +241,45 @@ main {
 */
 
 
-@media (min-width: 600px) {
+@media screen and (min-width: 900px) {
     /* tablets and desktop */
     main {
         max-width: 1500px;
         margin: 0 auto;
     }
 }
+/* TO DO: fix profile pic for screens < 900px*/
 
-@media  (max-width: 767px) {
+@media screen and (max-width: 1000px) {
+    /* inbetween */
+    main {
+        min-width: 80vw;
+        margin: 0 auto;
+    }
+
+    .about {
+        padding: 1rem;
+    }
+
+    #project-container {
+        padding: 1rem
+    }
+}
+@media screen and (max-width: 480px) {
     /* phones */
     main {
-        max-width: 480px;
-        margin: 0 auto;
+        
+        font-size: 16px;
+        margin: 0;
+        padding: 0;
+
+    }
+
+    .about {
+        padding: 1rem;
+    }
+
+    #project-container {
+        padding: 0 1rem
     }
 }
