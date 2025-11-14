@@ -1,4 +1,4 @@
-**Gwen's Professional Website**
+# Gwen's Professional Website
 
 Created to showcase completed and in progress projects.
 
