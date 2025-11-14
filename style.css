@@ -19,7 +19,6 @@ main {
 }
 
 
-
 .nav-header {
     display: flex;
     justify-content: space-between;
@@ -32,9 +31,19 @@ main {
 }
 #right-links {
     display: flex;
-    gap: 1.5rem;
+    gap: 2.5rem;
 }
 
+.nav-header a {
+    text-decoration: none;
+    font-weight: 800;
+    color: inherit;
+    display: inline-block;
+}
+
+.nav-header a:hover {
+    transform: scale(1.5);
+}
 
 .header {
     
@@ -119,6 +128,8 @@ main {
 }
 
 
+
+
 .project-box {
     background-color: pink;
     border-radius: 25px;
@@ -126,8 +137,15 @@ main {
 
 .project-box-text {
     margin: 1.5rem;
-    display: flexbox;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
 }
+
+.project-box:hover {
+    transform: scale(1.1);
+}
+
 
 .tech-stack {
     display: flex;
@@ -207,3 +225,20 @@ main {
     fix spacing between pfp and nav
 
 */
+
+
+@media (min-width: 600px) {
+    /* tablets and desktop */
+    main {
+        max-width: 1500px;
+        margin: 0 auto;
+    }
+}
+
+@media  (max-width: 767px) {
+    /* phones */
+    main {
+        max-width: 480px;
+        margin: 0 auto;
+    }
+}
