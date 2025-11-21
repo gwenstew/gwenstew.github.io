@@ -42,7 +42,7 @@ main {
 }
 
 .nav-header a {
-    font-size: 16px;
+    font-size: 1rem;
     text-decoration: none;
     color: inherit;
     display: inline-block;
@@ -195,7 +195,7 @@ img.profile-pic {
     color: black;              /* text color */
     padding: 0.3rem 0.75rem;  /* spacing inside bubble */
     border-radius: 9999px;    /* fully rounded */
-    font-size: 16px;
+    font-size: 1rem;
     white-space: nowrap;      /* prevent text breaking */
     border: 1px solid black;
 }
@@ -206,7 +206,7 @@ img.profile-pic {
     margin: 3rem;  
     padding: 0 1rem;    
     font-size: 3rem;
-    font-weight: 100;    
+    font-weight: 500;    
 }
 
 .project-photos{
