@@ -176,8 +176,12 @@ img.profile-pic {
 
 .project-box-text h2 {
     font-weight: 400;
-    margin-top: 1rem;
-    margin-bottom: 1rem;
+    margin: 0;
+}
+
+.project-box-text p {
+    padding: 1rem;
+    margin: 0;
 }
 
 .tech-stack {
@@ -186,7 +190,7 @@ img.profile-pic {
     flex-wrap: wrap;         /* allow wrapping to next line */
     gap: 0.5rem;             /* space between bubbles */
     padding: 0;
-    margin: 1rem 0 0 0;
+    margin: 0 0 0 0;
     list-style: none;
 }
 
