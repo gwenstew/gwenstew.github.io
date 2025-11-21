@@ -5,10 +5,22 @@
   font-style: normal;
 } */
 
+.dm-mono-regular {
+  font-family: "DM Mono", monospace;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.dm-sans-regular {
+  font-family: "DM Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
 
 main {
     /* font-family:  "Consolas", "Menlo", "Courier New", monospace; */
-    font-family: "Nunito";
+    font-family: "Nunito", monospace;
     font-size: 18px;
     display: flex;
     flex-direction: column;
@@ -31,13 +43,16 @@ main {
 
 .nav-header a {
     text-decoration: none;
-    font-weight: 800;
     color: inherit;
     display: inline-block;
+
+    border-radius: 1000px;
+    padding: 0.3rem 0.75rem;
+    border: 1.5px solid black;
 }
 
 .nav-header a:hover {
-    transform: scale(1.5);
+    transform: scale(1.2);
 }
 
 .header {
@@ -118,7 +133,7 @@ img.profile-pic {
     transform: scale(1.5);
 }
 
-.about {
+#about {
     margin: 1.5rem;
     padding: 1rem 7rem;
 }
@@ -142,6 +157,8 @@ img.profile-pic {
     border-radius: 25px;
     text-decoration: none;
     color: inherit;
+
+    border: 1.5px solid black;
 }
 
 .project-box-text {
@@ -157,11 +174,13 @@ img.profile-pic {
 }
 
 .project-box-text h2 {
+    font-weight: 400;
     margin-top: 1rem;
     margin-bottom: 1rem;
 }
 
 .tech-stack {
+
     display: flex;
     flex-wrap: wrap;         /* allow wrapping to next line */
     gap: 0.5rem;             /* space between bubbles */
@@ -172,13 +191,12 @@ img.profile-pic {
 
 .tech-stack li {
     background-color: white; /* bubble background */
-    color: #333;              /* text color */
+    color: black;              /* text color */
     padding: 0.3rem 0.75rem;  /* spacing inside bubble */
     border-radius: 9999px;    /* fully rounded */
-    font-size: 1rem;
-    font-weight: 500;
+    font-size: 16px;
     white-space: nowrap;      /* prevent text breaking */
-    transition: background 0.2s, transform 0.2s;
+    border: 1px solid black;
 }
 
 /* STYLING FOR PROJECT PAGES*/
@@ -258,7 +276,7 @@ img.profile-pic {
         padding: 1rem 0;
     }
 
-    .about {
+    #about {
         padding: 1rem;
     }
 
@@ -276,7 +294,7 @@ img.profile-pic {
 
     }
 
-    .about {
+    #about {
         padding: 1rem;
     }
 

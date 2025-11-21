@@ -5,9 +5,10 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <title>Gweneth Stewart</title>
+        <!--FONT IMPORTS-->
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
 
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
         
@@ -16,7 +17,8 @@
     </head>
     <body>
         <main>
-            <nav class="nav-header"> <!-- jump link to project section-->
+
+            <nav class="nav-header dm-mono-regular"> <!-- jump link to project section-->
                 <div id="left-links"> 
                     <a href="index.html#main" class="home-link">Gweneth Stewart</a>
                 </div>
@@ -36,7 +38,7 @@
                     <h1>Gweneth Stewart</h1>
                     <h3> Computer Science Graduate from Boston University</h3>
                 
-                    <nav id="links">
+                    <nav id="links" class="dm-mono-regular">
                         <ul>
                             <li><a href="mailto:gstew@bu.edu">
                                 <i class="far fa-envelope"></i> 
@@ -63,7 +65,7 @@
                 </div>
             </header>
             
-            <section id="about" class="about"> <!--about me-->
+            <section id="about"> <!--about me-->
                 <h2> About me</h2>
                 <p> 
                     Hi! I'm Gwen, a recent graduate from Boston University's Computer Science program with strong
@@ -95,7 +97,7 @@
                             CNN built in Python trained on the GTZAN dataset of 30 second audio files.
                             Still a work in progress as I am fine tuning the model.
                         </p>
-                        <ul class="tech-stack">
+                        <ul class="tech-stack dm-mono-regular">
                             <li>Python</li>
                             <li>Tensorflow</li>
                             <li>Librosa</li>
@@ -113,7 +115,7 @@
                             Desktop guitar tuner with real time pitch detection using autocorrelation.
                             Features a simple, responsive UI with a dial and current frequency
                         </p>
-                        <ul class="tech-stack">
+                        <ul class="tech-stack ">
                             <li>C++</li>
                             <li>JUCE</li>
                             <li>DSP</li>
@@ -127,26 +129,13 @@
                             Research on memory and model-based collaborative filtering techniques on recommendation systems
                             with the MovieLens dataset.
                         </p>
-                        <ul class="tech-stack">
+                        <ul class="tech-stack dm-mono-regular">
                             <li>Python</li>
                             <li>NumPy</li>
                             <li>Scikit-Learn</li>
                             <li>Machine Learning</li>
                         </ul> 
                     </div>                    
-                </a>
-                <a class="project-box" href="projects/render-shaders.html"> <!-- shaders/rendering-->
-                    <div class="project-box-text">
-                        <h2>Rendering and Shading</h2>
-                        <p>
-                            3D rendering pipeline that displays primitive shapes including spheres, cones, torus, and cubes.
-                            Set up different scenes with different light sources, implemented with the Phong Illumination Model.
-                        </p>
-                        <ul class="tech-stack">
-                            <li>OpenGL</li>
-                            <li>Python</li>
-                        </ul>
-                    </div>
                 </a>
                 <a class="project-box" href="projects/college-kitchen.html"> <!-- college kitchen-->
                     <div class="project-box-text">
@@ -155,7 +144,7 @@
                             Full-stack web app created to help college students with cooking and grocery shopping
                             for themselves. Allows users to discover recipes based on the ingredients in their virtual pantry
                         </p>
-                        <ul class="tech-stack">
+                        <ul class="tech-stack dm-mono-regular">
                             <li>React</li>
                             <li>Firebase</li>
                             <li>HTML/CSS</li>
@@ -164,6 +153,20 @@
                         </ul>
                     </div>
                 </a>
+                <a class="project-box" href="projects/render-shaders.html"> <!-- shaders/rendering-->
+                    <div class="project-box-text">
+                        <h2>Rendering and Shading</h2>
+                        <p>
+                            3D rendering pipeline that displays primitive shapes including spheres, cones, torus, and cubes.
+                            Set up different scenes with different light sources, implemented with the Phong Illumination Model.
+                        </p>
+                        <ul class="tech-stack dm-mono-regular">
+                            <li>OpenGL</li>
+                            <li>Python</li>
+                        </ul>
+                    </div>
+                </a>
+                
             </div> 
         </main>
     </body>
