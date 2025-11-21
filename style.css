@@ -207,10 +207,13 @@ img.profile-pic {
 /* STYLING FOR PROJECT PAGES*/
 
 .project-title {
+    font-family: "DM Mono", monospace;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 3rem;
     margin: 3rem;  
     padding: 0 1rem;    
-    font-size: 3rem;
-    font-weight: 500;    
+
 }
 
 .project-photos{
@@ -225,8 +228,9 @@ img.profile-pic {
     width: 400px;
     height:auto;
     padding-top: 2rem;
-    outline: 1px solid rgba(0,0,0,0.1);
+    /* outline: 1px solid rgba(0,0,0,0.1); */
     border-radius: 8px;
+    border: 2px solid black;
 }
 
 .photo-item {
@@ -234,9 +238,11 @@ img.profile-pic {
 }
 
 .project-photos p {
-    color: rgb(109, 109, 109);
-    font-size: 0.8rem;
-    font-weight: bold;    
+    font-family: "DM Mono", monospace;
+    font-weight: 200;
+    color: rgb(17, 17, 17);
+    font-size: 1rem;
+        
 }
 
 .project-overview {
